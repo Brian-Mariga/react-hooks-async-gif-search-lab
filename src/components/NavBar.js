@@ -6,8 +6,10 @@ function NavBar({ color, title }) {
     white: "navbar-default",
   };
 
+  const navClass = `navbar ${colors[color]}`;
+
   return (
-    <nav className={`navbar ${colors[color]}`}>
+    <nav className={navClass}>
       <div className="container-fluid">
         <div className="navbar-header">
           <span className="navbar-brand">{title}</span>
